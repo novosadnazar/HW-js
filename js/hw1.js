@@ -9,4 +9,4 @@
 // const myNumber = 15 + 10;
 // console.log(myNumber);
 // const myNull = null;
-// console.log(myNull);
+// console.log(myNull);w
