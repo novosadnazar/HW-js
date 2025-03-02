@@ -1,50 +1,50 @@
 // Створіть дві змінні для зберігання значень двох текстових полів. Перевірте, чи обидві змінні не є порожніми. Якщо обидва поля заповнені, вивести повідомлення "Обидва поля заповнені", якщо ні — "Не всі поля заповнені".
 
-// const first = 20;
-// const second = 10;
-// if (first && second) {
-//     console.log("Обидва поля заповнені");
-// }else{
-//     console.log("Не всі поля заповнені");
-// }
+const first = 20;
+const second = 10;
+if (first && second) {
+    console.log("Обидва поля заповнені");
+}else{
+    console.log("Не всі поля заповнені");
+}
 
 // Створіть дві змінні для зберігання числових значень. Обчисліть їх суму. Якщо сума більше 10 — виведіть "Сума більша за 10", якщо ні — "Сума менша або дорівнює 10".
 
-// const firstNumber = 2;
-// const secondNumber = 8;
-// const result = firstNumber + secondNumber;
-// if (result > 10) {
-//     console.log("Сума більша за 10");
-// }else{
-//     console.log("Сума менша або дорівнює 10");
-// }
+const firstNumber = 2;
+const secondNumber = 8;
+const result = firstNumber + secondNumber;
+if (result > 10) {
+    console.log("Сума більша за 10");
+}else{
+    console.log("Сума менша або дорівнює 10");
+}
 
 
 // Створіть змінну для зберігання тексту. Перевірте, чи містить цей текст слово "JavaScript". Якщо містить, виведіть "Текст містить слово JavaScript", якщо ні — "Текст не містить слово JavaScript".
 
-// const text = "i love coding in";
-// if (text.includes("JavaScript")) {
-//     console.log("Текст містить слово JavaScript");
-// }else{
-//     console.log("Текст не містить слово JavaScript");
-// }
+const text = "i love coding in";
+if (text.includes("JavaScript")) {
+    console.log("Текст містить слово JavaScript");
+}else{
+    console.log("Текст не містить слово JavaScript");
+}
 
 // Створіть змінну для зберігання числа. Перевірте, чи це число більше 10 і менше 20. Якщо так — виведіть "Число входить в діапазон від 10 до 20", якщо ні — "Число не входить в діапазон від 10 до 20".
 
-// const number = 40;
-// if (number > 10 && number < 20) {
-//     console.log("Число входить в діапазон від 10 до 20");
-// }else{
-//     console.log("Число не входить в діапазон від 10 до 20");
-// }
+const number = 40;
+if (number > 10 && number < 20) {
+    console.log("Число входить в діапазон від 10 до 20");
+}else{
+    console.log("Число не входить в діапазон від 10 до 20");
+}
 
 // Створіть змінні для зберігання значень полів (ім'я, email, пароль). Перевірте, чи ім'я містить не менше 3 символів, чи email містить символ @ та крапку після нього, а пароль не менше 6 символів. Якщо всі умови виконані — виведіть "Перенаправлення на іншу сторінку", якщо ні — "Помилка: неправильне заповнення".
 
-// const naame = "nazar";
-// const email = "javascript@gmail.com";
-// const password = "javascript13";
-// if (naame.length === 3, email.includes("@"), email.includes("."),  password.length >= 6) {
-//   console.log("Перенаправлення на іншу сторінку");  
-// }else{
-//     console.log("Помилка: неправильне заповнення");
-// }
+const naame = "nazar";
+const email = "javascript@gmail.com";
+const password = "javascript13";
+if (naame.length === 3, email.includes("@"), email.includes("."),  password.length >= 6) {
+  console.log("Перенаправлення на іншу сторінку");  
+}else{
+    console.log("Помилка: неправильне заповнення");
+}
