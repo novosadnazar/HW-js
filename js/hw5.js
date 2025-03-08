@@ -1,17 +1,24 @@
 // Створіть змінну, що симулює вибір варіанта зі списку. Виводьте повідомлення залежно від обраного варіанта: "Кава", "Чай" або "Сік". Використайте switch
-const coffee = "Кава";
-const tea = "Чай";
-const juice = "Сік";
-const result1 = prompt(`виберіть напій зі списку ${coffee} ${tea} ${juice}`);
-switch (result) {
+const coffee = "кава";
+const tea = "чай";
+const juice = "сік";
+
+let result1 = prompt(`Виберіть напій зі списку: ${coffee} ${tea} ${juice}`);
+
+if (result1) {
+  result1 = result1.trim().toLowerCase();
+}
+
+switch (result1) {
   case coffee:
     alert(`Ви обрали ${coffee}`);
     break;
   case tea:
-    alert(` Ви обрали ${tea}`);
+    alert(`Ви обрали ${tea}`);
     break;
   case juice:
     alert(`Ви обрали ${juice}`);
+    break;
   default:
     alert("Такого напою немає в списку");
 }
