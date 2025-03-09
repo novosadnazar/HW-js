@@ -25,14 +25,15 @@ switch (result1) {
 
 // Створіть змінну для зберігання введеного рядка, який може бути днем тижня.
 // Якщо це робочий день — виведіть повідомлення про робочий день, якщо вихідний — про вихідний
-const messenge = prompt("Введіть текст");
-const monday = "Понеділок";
-const tuesday = "Вівторок";
-const wednesday = "Середа";
-const thursday = "Четвер";
-const friday = "П'ятниця";
-const saturday = "Субота";
-const sunday = "Неділя";
+let messenge = prompt("Введіть любий день тижня");
+const monday = "понеділок";
+const tuesday = "вівторок";
+const wednesday = "середа";
+const thursday = "четвер";
+const friday = "п'ятниця";
+const saturday = "субота";
+const sunday = "неділя";
+messenge = messenge.trim().toLowerCase();
 switch (messenge) {
   case monday:
   case tuesday:
@@ -44,16 +45,17 @@ switch (messenge) {
   case saturday:
   case sunday:
     alert("Це вихідний день");
+    break;
   default:
     alert("День введено не правильно");
     break;
  }
 
 //Створіть змінну для зберігання номера місяця. За номером місяця визначайте пору року і виводьте відповідне повідомлення.
-const month = parseInt(prompt("Введіть номер місяця (1-12):"));
+let month = prompt("Введіть номер місяця (1-12):").trim().toLowerCase(); 
 let season;
+month = parseInt(month);
 switch (month) {
-  case month:
   case 12:
   case 1:
   case 2:
@@ -75,17 +77,18 @@ switch (month) {
     season = "Осінь";
     break;
   default:
-    season = "НЕ правильний номер місяця";
+    season = "НЕ правильний номер місяця"; 
     break;
 }
-console.log(` Пора року ${season}`);
+
+season = alert(`Пора року: ${season}`);
 
 // Створіть змінну для зберігання назви кольору. Виводьте повідомлення відповідно до вибраного кольору: якщо "червоний" — "стоп", "зелений" — "йти", "жовтий" — "чекати".
 
 const red = "червоний";
 const green = "зелений";
 const yellow = "жовтий";
-const color = prompt("Виберіть колір (червоний, зелений, жовтий)");
+const color = prompt("Виберіть колір (червоний, зелений, жовтий)").trim().toLowerCase();
 switch (color) {
   case red:
     alert("стоп");
@@ -102,9 +105,9 @@ switch (color) {
 }
 
 // Створіть змінні для зберігання двох чисел та оператора (як у списку select). Виконайте відповідну операцію та виведіть результат. У випадку ділення на нуль — виведіть попередження.
-const firstNumber = 720;
-const secondNumber = 40;
-const oper = "/" ;
+const firstNumber = parseFloat(prompt("Введіть перше число:").trim().toLowerCase());
+const oper = prompt("Введіть оператор (+, -, *, /):").trim().toLowerCase();
+const secondNumber = parseFloat(prompt("Введіть друге число:").trim().toLowerCase());
 let result;
 switch (true) {
   case (oper === "+"):
@@ -123,4 +126,4 @@ case (oper === "/"):
     result = "Невідомий оператор"
     break;
 }
-console.log(result);
+result = alert(result);
