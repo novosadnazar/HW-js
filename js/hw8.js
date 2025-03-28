@@ -13,21 +13,8 @@ const cards = [
     'Карточка-4',
     'Карточка-5',
   ];
-cards.splice(3, 9, "10");
-const cardToRemove = 'Карточка-3';
-const cardToInsert = 'Карточка-6';
-const cardToUpdate = 'Карточка-4';
-const indexElement = cards.indexOf(cardToRemove); 
-console.log(indexElement);
-console.log(cards); 
-if (indexElement !== -1) {
-    cards.splice(indexElement, 1)
-}
+cards.splice(2, 1,);// видалив карточку-3
+cards.push("Карточка-6");// додав карточку-6
+cards.splice(2, 1, "оновлена карточка-4")
 console.log(cards);
-cards.push(cardToInsert);
-console.log(cards);
-cards.splice(1, 1, cardToUpdate); 
-
-console.log(cards);
-//Видалення (по індексу), метод indexOf()
 
