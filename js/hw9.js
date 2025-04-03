@@ -34,3 +34,32 @@ function findLongestWord(string) {
 }
 console.log(findLongestWord("Lorem ipsum dolor sit amet consectetur adipisicing elit"));
    
+
+//Напиши функцію formatString(string) яка приймає рядок і форматує його якщо необхідно.
+//Якщо довжина рядка не перевищує 40 символів, функція повертає її в початковому вигляді.
+//Якщо довжина більше 40 символів, то функція обрізає рядок до 40-ка символів і додає в кінець рядка три крапки '...', після чого повертає укорочену версію.
+
+function formatString(string) {
+  if (string.length <= 40) {
+      return string;
+  } else {
+      return string.slice(0, 40) + " ..";
+  }
+}
+console.log(
+  formatString(
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio, ea st consequuntur apeorporis ab, assumenda minima amet architecto et!"
+  )
+);
+
+// Напиши функцію checkForSpam(message), приймаючу 1 параметр message — рядок. Функція перевіряє її на вміст слів spam і sale. Якщо знайшли заборонене слово, то функція повертає true, якщо заборонених слів немає функція повертає false. Слова в рядку можуть бути в довільному регістрі.
+
+function checkForSpam(message) { 
+    const wordss = message.toLowerCase();
+  if (wordss.includes("sale") || wordss.includes("spam")) {
+      return true;
+  }
+    return false;
+}
+console.log(checkForSpam("Lorem ipsum dolor sit amet sale "));
+console.log(checkForSpam("Lorem ipsum dolor sit amet "));
