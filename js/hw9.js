@@ -11,14 +11,14 @@ logItems(["Mango", "Poly", "Ajax"]);
 
 // Напиши скрипт підрахунку вартості гравіювання прикрас. Для цього створи функцію calculateEngravingPrice(message, pricePerWord) приймаючу рядок (в рядку будуть тільки слова і прогалини) і ціну гравіювання одного слова, і повертає ціну гравіювання всіх слів в рядку.
 
-function calculateEngravingPrice(message, pricePerWord){
-    let totals = 0;
-    for (pricePerWord of message) {
-        totals += pricePerWord;
-    }
-    return totals;
+function calculateEngravingPrice(message, pricePerWord) {
+    const res = message.split(" ");
+    console.log(message);
+    console.log(pricePerWord);
+    console.log(res.length);
+    return res.length + pricePerWord
 }
-console.log(calculateEngravingPrice([20, 300, 1000]));
+console.log(calculateEngravingPrice("dolor sit amet consectetur adipisicing", 1000));
 
 // Напиши функцію findLongestWord(string), яка приймає параметром довільний рядок (в рядку будуть тільки слова і прогалини) і повертає найдовше слово в цьому рядку.
 
@@ -46,20 +46,17 @@ function formatString(string) {
       return string.slice(0, 40) + " ..";
   }
 }
-console.log(
-  formatString(
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio, ea st consequuntur apeorporis ab, assumenda minima amet architecto et!"
-  )
-);
+console.log(formatString("Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio, ea st consequuntur apeorporis ab, assumenda minima amet architecto et!"));
 
 // Напиши функцію checkForSpam(message), приймаючу 1 параметр message — рядок. Функція перевіряє її на вміст слів spam і sale. Якщо знайшли заборонене слово, то функція повертає true, якщо заборонених слів немає функція повертає false. Слова в рядку можуть бути в довільному регістрі.
 
 function checkForSpam(message) { 
     const wordss = message.toLowerCase();
-  if (wordss.includes("sale") || wordss.includes("spam")) {
-      return true;
-  }
-    return false;
+    if (wordss.includes("sale") || wordss.includes("spam")) {
+        return true;
+    } else {
+        return false;
+    }
 }
-console.log(checkForSpam("Lorem ipsum dolor sit amet sale "));
+console.log(checkForSpam("Lorem ipsum dolor sit amet sale"));
 console.log(checkForSpam("Lorem ipsum dolor sit amet "));
