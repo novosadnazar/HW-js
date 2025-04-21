@@ -75,4 +75,22 @@ const user = {
 };
 
 user.login();
- 
+//  Створіть об'єкт "movie" з властивостями "title", "director", "year", "rating". Додайте до об'єкту метод, який повертає "true", якщо рейтинг фільму вище 8, та "false", якщо рейтинг фільму 8 або нижче. Вивести значення властивостей в консоль. 
+const movie = {
+  title: "Тачки",
+  director: "Джон Лассетер",
+  year: 2006,
+  rating: 7,
+
+  findMoviw: function () {
+    return this.rating < 0;
+  },
+
+}
+movie.findMoviw()
+
+if (movie.findMoviw()) {
+console.log(" рейтинг фільму вище 8");
+} else {
+console.log("рейтинг фільму нижче 8");
+}
