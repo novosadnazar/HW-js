@@ -78,3 +78,91 @@ const countTotalSalary = (employees) => {
 };
 
 countTotalSalary(salaries);
+
+
+// Завдання 5
+// Напиши функцію getAllPropValues(arr, prop), яка отримує масив об'єктів і ім'я властивості. Повертає масив значень певної властивості prop з кожного об'єкта в масиві.
+const getAllPropValues = (arr, prop) => {
+  // console.log(arr);
+  // console.log(prop);
+  let result = [];
+  for (const item of arr) {
+    // console.log(item);
+    // console.log(item[prop]);
+    result.push(item[prop])
+  }
+  return result;
+}
+
+
+const product = [
+  {
+    name: "apple",
+    price: 112,
+    count: 20,
+    weight: "2kg",
+  },
+
+  {
+    name: "banan",
+    price: 150,
+    count: 29,
+    weight: "4kg",
+  },
+
+  {
+    name: "orange",
+    price: 90,
+    count: 199,
+    weight: "10kg",
+  },
+];
+
+console.log(getAllPropValues(product, "name"));
+console.log(getAllPropValues(product, "price"));
+console.log(getAllPropValues(product, "count"));
+console.log(getAllPropValues(product, "weight"));
+
+
+// Завдання 6
+// Напиши функцію calculateTotalPrice(allProdcuts, productName), яка отримує масив об'єктів та ім'я продукту (значення властивості name). Повертає загальну вартість продукту (ціна * кількість).
+// Викличи функції для перевірки працездатності твоєї реалізації.
+
+const calculateTotalPrice = (allProdcuts, productName) => {
+  // console.log(allProdcuts);
+  // console.log(productName);
+  for (const productC of allProdcuts) {
+    console.log(productC);
+    if (productC.name === productName) {
+      return productC.price * productC.count;
+    }
+  }
+
+}
+
+const productB = [
+  {
+    name: "apple",
+    price: 112,
+    count: 20,
+    weight: "2kg",
+  },
+
+  {
+    name: "banan",
+    price: 150,
+    count: 29,
+    weight: "4kg",
+  },
+
+  {
+    name: "orange",
+    price: 90,
+    count: 199,
+    weight: "10kg",
+  },
+];
+
+console.log(calculateTotalPrice(productB, "apple"));
+console.log(calculateTotalPrice(productB, "banan"));
+console.log(calculateTotalPrice(productB, "orange"));
