@@ -162,6 +162,9 @@ const productB = [
     weight: "10kg",
   },
 ];
+const { name, price, count, weight, } = productB
+
+
 
 console.log(calculateTotalPrice(productB, "apple"));
 console.log(calculateTotalPrice(productB, "banan"));
