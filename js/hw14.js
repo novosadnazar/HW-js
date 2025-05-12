@@ -96,7 +96,7 @@ console.log(getUserNames(users));
 
 //Отримати масив об'єктів користувачів за кольором очей (поле eyeColor).
 
-const getUsersWithEyeColor = (users, color) => users.filter((user) => user.color);
+const getUsersWithEyeColor = (users, color) => users.filter((user) => user.eyeColor === color);
   console.log(getUsersWithEyeColor(users, "blue"));
 
 // Отримати масив імен користувачів за статтю (поле gender)
@@ -108,6 +108,6 @@ const getInactiveUsers = (users) => users.filter((user) => !user.isActive)
 console.log(getInactiveUsers(users));
 
 // Отримати користувача (не масив) по email (поле email, він унікальний).
-const getUserWithEmail = (users, email) => users.find((user) => user.email === "shereeanthony@kog.com");
+const getUserWithEmail = (users, email) => users.find((user) => user.email === user.email);
     console.log(getUserWithEmail(users, "shereeanthony@kog.com"));
   console.log(getUserWithEmail(users, "elmahead@omatom.com"));
